@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Vinodha Estates Gwalior — Buy & sell plots, flats, houses. Legal documentation, e-registration, planning, 2D/3D design, construction & consultancy. Trusted by 500+ families.">
+    <meta name="keywords" content="real estate Gwalior, buy plot Gwalior, sell flat Gwalior, Vinodha Estates, property registration MP, construction Gwalior">
+    <meta name="author" content="Vinodha Estates">
+    <meta property="og:title" content="Vinodha Estates Gwalior | Buy, Sell, Construction & Consultancy">
+    <meta property="og:description" content="Gwalior's trusted real estate partner — Buy/sell properties, legal documentation, construction & consultancy. 500+ happy families.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://vinodhaestates.com">
+    <meta name="theme-color" content="#0a1628">
+    <title>Vinodha Estates Gwalior | Buy, Sell, Construction & Consultancy</title>
+    <link rel="icon" type="image/svg+xml" href="assets/vinodha-icon.svg">
+    <link rel="canonical" href="https://vinodhaestates.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "RealEstateAgent",
+        "name": "Vinodha Estates",
+        "telephone": "+91-7974741166",
+        "email": "hello@vinodhaestates.com",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Gwalior",
+            "addressRegion": "Madhya Pradesh",
+            "addressCountry": "IN"
+        },
+        "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "500" }
+    }
+    </script>
+</head>
+<body>
+
+<!-- ===== SCROLL PROGRESS ===== -->
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar" aria-label="Main Navigation">
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <img src="assets/Angular blue logo design.png" alt="Vinodha Estates Logo" class="logo-img" width="44" height="44">
+            <span class="logo-wrap">
+                <span class="logo-brand">VINODHA</span>
+                <span class="logo-sub">ESTATES</span>
+            </span>
+        </a>
+        <ul class="nav-links" id="navLinks" role="list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Buy &amp; Sell</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="/admin" class="nav-admin">Admin</a></li>
+        </ul>
+        <div class="nav-actions">
+            <button class="wishlist-btn" id="wishlistBtn" aria-label="View wishlist (0 items)">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                <span class="wishlist-count" id="wishlistCount" aria-live="polite">0</span>
+            </button>
+            <a href="#contact" class="btn btn-primary nav-cta">Contact Us</a>
+            <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== MOBILE MENU ===== -->
+<div class="mobile-overlay" id="mobileOverlay" aria-hidden="true"></div>
+<div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Mobile Navigation">
+    <div class="mobile-head">
+        <img src="assets/Angular blue logo design.png" alt="Vinodha Estates" width="36" height="36">
+        <button class="mobile-close" id="mobileClose" aria-label="Close menu">&times;</button>
+    </div>
+    <ul class="mobile-links" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Buy &amp; Sell</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+    </ul>
+    <a href="#contact" class="btn btn-primary mobile-cta">Contact Us</a>
+</div>
+
+<!-- ===== 1. HERO ===== -->
+<header class="hero" id="hero">
+    <video autoplay muted loop playsinline class="hero-video" title="Vinodha Estates Luxury Properties Showcase">
+        <source src="assets/video1.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-badge anim-fade-down">Curated Luxury Living</div>
+        <h1 class="anim-fade-up">Discover Properties<br>Beyond Ordinary</h1>
+        <p class="hero-sub anim-fade-up d2">Gwalior's most trusted real estate partner — Buy, Sell, Build &amp; Invest</p>
+        <div class="hero-ctas anim-fade-up d3">
+            <a href="#services" class="btn btn-primary">Explore Services</a>
+            <a href="https://wa.me/917974741166?text=Hi%20Vinodha%20Estates%2C%20I%27m%20interested%20in%20your%20properties" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                Chat on WhatsApp
+            </a>
+        </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">
+        <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+        <span>Scroll to explore</span>
+    </div>
+</header>
+
+<main id="main-content">
+
+<!-- ===== 2. WHY GWALIOR — PILLARS ===== -->
+<section class="pillars-section" id="why-gwalior" aria-label="Why Invest in Gwalior">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="tag">Pillars of Prime Locations</span>
+            <h2>Why Invest in Gwalior?</h2>
+            <p>Gwalior is one of India's fastest-developing cities. These landmarks make it a goldmine for real estate investment.</p>
+        </div>
+        <div class="pillars-grid reveal">
+            <div class="pillar-card">
+                <div class="pillar-img"><img src="assets/primelocation1.png" alt="Gwalior Outer Ring Road" loading="lazy"></div>
+                <h4>Gwalior Outer Ring-Road</h4>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-img"><img src="assets/primelocation2.png" alt="Gwalior Airport" loading="lazy"></div>
+                <h4>Gwalior Airport</h4>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-img"><img src="assets/primelocation3.png" alt="Gwalior Railway Station" loading="lazy"></div>
+                <h4>Gwalior Railway Station</h4>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-img"><img src="assets/primelocation4.png" alt="Industrial IT Hub" loading="lazy"></div>
+                <h4>Industrial &amp; IT Hub</h4>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-img"><img src="assets/primelocation5.png" alt="Future Metropolitan Region" loading="lazy"></div>
+                <h4>Future Metropolitan Region</h4>
+            </div>
+            <div class="pillar-card">
+                <div class="pillar-img"><img src="assets/primelocation6.jpeg" alt="Agra-Gwalior Expressway" loading="lazy"></div>
+                <h4>Agra–Gwalior Expressway</h4>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trust Ribbon -->
+    <div class="trust-ribbon" aria-label="Trust badges">
+        <span>✅ 100% Verified Properties &nbsp;|&nbsp; 📜 RERA Registered &amp; Approved Projects &nbsp;|&nbsp; 🤝 Authorized Channel Partner &nbsp;|&nbsp; 🔐 Safe &amp; Secure Investments &nbsp;|&nbsp; 📈 Invest with Confidence. Grow with Us.</span>
+    </div>
+</section>
+
+<!-- ===== 3. SERVICES ===== -->
+<section class="services" id="services" aria-label="Our Services">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="tag">What We Offer</span>
+            <h2>Our Services</h2>
+            <p>Comprehensive real estate solutions — from buying your dream property to complete construction and legal support.</p>
+        </div>
+        <div class="services-grid reveal">
+
+            <div class="svc-card">
+                <div class="svc-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                </div>
+                <h3>Buy Properties</h3>
+                <ul class="svc-list svc-list-blue">
+                    <li><a href="#contact">Plot, Flat &amp; House</a></li>
+                    <li><a href="#contact">Investment Purpose</a></li>
+                    <li><a href="#contact">Home Purpose</a></li>
+                    <li><a href="#contact">J.V. Purpose</a></li>
+                </ul>
+            </div>
+
+            <div class="svc-card">
+                <div class="svc-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                </div>
+                <h3>Documentation &amp; Legal</h3>
+                <ul class="svc-list">
+                    <li>Gift Deed</li>
+                    <li>E-Registration</li>
+                    <li>Power of Attorney</li>
+                    <li>Agreements</li>
+                    <li>Many More</li>
+                </ul>
+            </div>
+
+            <div class="svc-card">
+                <div class="svc-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+                </div>
+                <h3>Planning &amp; Drawing</h3>
+                <ul class="svc-list">
+                    <li>Interior &amp; Exterior</li>
+                    <li>Site / House Plans</li>
+                    <li>2D / 3D Walkthrough Video</li>
+                    <li>Site Development</li>
+                    <li>Elevation Design</li>
+                </ul>
+            </div>
+
+            <div class="svc-card">
+                <div class="svc-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="1" y="6" width="22" height="16" rx="2"/><path d="M1 10h22"/><line x1="12" y1="6" x2="12" y2="2"/><path d="M8 2h8"/></svg>
+                </div>
+                <h3>Construction</h3>
+                <ul class="svc-list">
+                    <li>Civil Engineer Supply</li>
+                    <li>3D Printed House</li>
+                    <li>Material Supply</li>
+                </ul>
+            </div>
+
+            <div class="svc-card">
+                <div class="svc-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <h3>Our Channel Partner</h3>
+                <ul class="svc-list">
+                    <li>Property Sales &amp; Booking</li>
+                    <li>Verified Builder Partnerships</li>
+                    <li>Investment Guidance</li>
+                    <li>End-to-End Support</li>
+                </ul>
+            </div>
+
+            <div class="svc-card">
+                <div class="svc-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M12 1v22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+                </div>
+                <h3>Sell Your Property</h3>
+                <ul class="svc-list">
+                    <li>Maximum Property Exposure</li>
+                    <li>Qualified Buyer Leads</li>
+                    <li>Best Price Assurance</li>
+                    <li>Hassle-Free Selling Process</li>
+                </ul>
+            </div>
+
+            <div class="svc-card">
+                <div class="svc-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/><path d="M6 16h4"/></svg>
+                </div>
+                <h3>Upcoming Properties</h3>
+                <ul class="svc-list">
+                    <li>Agra–Gwalior Expressway</li>
+                    <li>Gwalior Outer Ring Road</li>
+                    <li>Airport Expansion Zone</li>
+                    <li>5-Star Railway Station Area</li>
+                    <li>Industrial &amp; IT Hub</li>
+                    <li>Future Metropolitan Region</li>
+                </ul>
+            </div>
+
+            <a href="#projects" class="svc-card svc-card-link">
+                <div class="svc-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M2 22V8l10-6 10 6v14"/><path d="M6 12h4v6H6z"/><path d="M14 12h4v6h-4z"/><line x1="2" y1="22" x2="22" y2="22"/></svg>
+                </div>
+                <h3>Our Projects <span class="arrow-link">→</span></h3>
+                <ul class="svc-list">
+                    <li>Prime Location</li>
+                    <li>Modern Amenities</li>
+                    <li>Quality Construction</li>
+                    <li>High Investment Potential</li>
+                    <li>Legal &amp; Verified</li>
+                    <li>Ideal for Living &amp; Investment</li>
+                </ul>
+            </a>
+
+            <!-- Consultancy -->
+            <div class="svc-card svc-consultancy">
+                <div class="svc-icon">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <h3>Consultancy</h3>
+                <p class="svc-consult-desc">Get expert advice on any real estate matter:</p>
+                <div class="consult-form">
+                    <input type="text" id="consultName" placeholder="Your Name" required aria-label="Your name">
+                    <input type="tel" id="consultPhone" placeholder="Your Phone" required aria-label="Your phone number">
+                    <input type="text" id="consultQuery" placeholder="Your Query / Question" aria-label="Your query">
+                    <button class="btn btn-primary btn-full" onclick="sendConsultancy()">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                        Send to WhatsApp
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== 4. FEATURED COLLECTION — 8 PLOT CARDS ===== -->
+<section class="projects" id="projects" aria-label="Featured Projects">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="tag">Featured Collection</span>
+            <h2>Projects Gallery</h2>
+            <p>Each project is handpicked, representing the pinnacle of modern design and luxury craftsmanship.</p>
+        </div>
+        <div class="projects-grid">
+
+            <article class="plot-card reveal">
+                <div class="plot-img">
+                    <img src="assets/plot1.jpg" alt="Premium Residential Plot - DD Nagar Gwalior" loading="lazy">
+                    <span class="plot-badge">Top Location </span>
+                    <button class="plot-wishlist" onclick="addToWishlist('Premium Plot — DD Nagar', '₹45 Lakh')" aria-label="Add to wishlist">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="plot-body">
+                    <p class="plot-location">📍 Aashirwad Residency New City Center, Gwalior</p>
+                    <!-- <h3 class="plot-title">Premium Residential Plot</h3> -->
+                    <div class="plot-meta">
+                        <span>📐 30 × 45 = 1350 sq. ft. (Corner Plot)</span>
+                        <span>🏷 RERA Approved</span>
+                    </div>
+                    <a href="https://wa.me/917974741166?text=Hi%2C%20I%27m%20interested%20in%20Premium%20Residential%20Plot%20DD%20Nagar" class="plot-btn" target="_blank" rel="noopener">Enquire Now →</a>
+                </div>
+            </article>
+
+            <article class="plot-card reveal">
+                <div class="plot-img">
+                    <img src="assets/plot2.jpg" alt="Investment Plot - Agra Gwalior Expressway" loading="lazy">
+                    <span class="plot-badge">Top Location</span>
+                    <button class="plot-wishlist" onclick="addToWishlist('Expressway Investment Plot', '₹38 Lakh')" aria-label="Add to wishlist">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="plot-body">
+                    <p class="plot-location">📍 Auria Park (Near Sunvalley Putlighar, Main Road – City Center)</p>
+                    <div class="plot-meta">
+                       <span>📐 1153.52 sqft</span><br>
+                        <span>🏷 RERA Approved</span>
+                        <!-- <span>🏘 12 Plots Available</span> -->
+                    </div>
+                    <a href="https://wa.me/917974741166?text=Hi%2C%20I%27m%20interested%20in%20Expressway%20Investment%20Plot" class="plot-btn" target="_blank" rel="noopener">Enquire Now →</a>
+                </div>
+            </article>
+
+            <article class="plot-card reveal">
+                <div class="plot-img">
+                    <img src="assets/plot3.jpg" alt="Corner Plot - City Center Gwalior" loading="lazy">
+                    <span class="plot-badge">Top Location</span>
+                    <button class="plot-wishlist" onclick="addToWishlist('Corner Plot — City Centre', '₹72 Lakh')" aria-label="Add to wishlist">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="plot-body">
+                    <p class="plot-location">📍 New City Center, Sirol Main Rd,Cosmo Anand, Gwalior</p>
+                    <div class="plot-meta">
+                        <span>📐 1200  sqft</span>
+                        <span>🏷 RERA Approved</span>
+                        <span> Plots Availble</span>
+                    </div>
+                    <a href="https://wa.me/917974741166?text=Hi%2C%20I%27m%20interested%20in%20Prime%20Corner%20Plot%20City%20Centre" class="plot-btn" target="_blank" rel="noopener">Enquire Now →</a>
+                </div>
+            </article>
+
+            <article class="plot-card reveal">
+                <div class="plot-img">
+                    <img src="assets/plot4.jpg" alt="Commercial Plot - Thatipur Gwalior" loading="lazy">
+                    <span class="plot-badge">Top Location</span>
+                    <button class="plot-wishlist" onclick="addToWishlist('Commercial Plot — Thatipur', '₹95 Lakh')" aria-label="Add to wishlist">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="plot-body">
+                    <p class="plot-location">📍 Satyam green (Behind Woods Residency), Gwalior</p>
+                    <div class="plot-meta">
+                        <span>📐 1450 sqft</span>
+                        <span>🏷 RERA Approved</span>
+                        <span> Plots Availble</span>
+                    </div>
+                    <a href="https://wa.me/917974741166?text=Hi%2C%20I%27m%20interested%20in%20Commercial%20Hub%20Plot%20Thatipur" class="plot-btn" target="_blank" rel="noopener">Enquire Now →</a>
+                </div>
+            </article>
+
+            <article class="plot-card reveal">
+                <div class="plot-img">
+                    <img src="assets/plot5.jpg" alt="Affordable Plot - Morar Gwalior" loading="lazy">
+                    <span class="plot-badge">Top Location</span>
+                    <button class="plot-wishlist" onclick="addToWishlist('Budget Plot — Morar', '₹22 Lakh')" aria-label="Add to wishlist">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="plot-body">
+                    <p class="plot-location">📍 Near Morning Star School (Khureri,Badagaon), Gwalior</p>
+                    <div class="plot-meta">
+                        <span>📐 30 × 45 = 1350 sqft (Corner Plot) </span>
+                        <span>🏷 RERA Approved</span>
+                    </div>
+                    <a href="https://wa.me/917974741166?text=Hi%2C%20I%27m%20interested%20in%20Affordable%20Residential%20Plot%20Morar" class="plot-btn" target="_blank" rel="noopener">Enquire Now →</a>
+                </div>
+            </article>
+
+            <article class="plot-card reveal">
+                <div class="plot-img">
+                    <img src="assets/plot6.jpg" alt="Ring Road Plot - Outer Ring Road Gwalior" loading="lazy">
+                    <span class="plot-badge">Top Location</span>
+                    <button class="plot-wishlist" onclick="addToWishlist('Ring Road Plot — Outer Bypass', '₹55 Lakh')" aria-label="Add to wishlist">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="plot-body">
+                    <p class="plot-location">📍 Near S.L.P. College, New Road (Morar), Gwalior</p>
+                    <div class="plot-meta">
+                        <span>📐 20 × 40 / 20 × 50 plots</span>
+                        <span>🏷 RERA Approved</span>
+                        <span>🏘 5 Plots Available</span>
+                    </div>
+                    <a href="https://wa.me/917974741166?text=Hi%2C%20I%27m%20interested%20in%20Ring%20Road%20Facing%20Plot" class="plot-btn" target="_blank" rel="noopener">Enquire Now →</a>
+                </div>
+            </article>
+
+            <article class="plot-card reveal">
+                <div class="plot-img">
+                    <img src="assets/plot7.jpg" alt="Luxury Villa Plot - Lashkar Gwalior" loading="lazy">
+                    <span class="plot-badge">Top Location</span>
+                    <button class="plot-wishlist" onclick="addToWishlist('Luxury Villa Plot — Lashkar', '₹1.2 Cr')" aria-label="Add to wishlist">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="plot-body">
+                    <p class="plot-location">📍 Behata (Virat City),Bypass Agra Jhansi, Gwalior</p>
+                    <div class="plot-meta">
+                        <span>📐 20 × 50 sqft</span>
+                        <span>🏷 RERA Approved</span>
+                        <span>🏘 10 Plot Available</span>
+                    </div>
+                    <a href="https://wa.me/917974741166?text=Hi%2C%20I%27m%20interested%20in%20Luxury%20Villa%20Plot%20Lashkar" class="plot-btn" target="_blank" rel="noopener">Enquire Now →</a>
+                </div>
+            </article>
+
+            <article class="plot-card reveal">
+                <div class="plot-img">
+                    <img src="assets/plot8.jpg" alt="Airport Zone Plot near Maharajpur" loading="lazy">
+                    <span class="plot-badge">Top Location</span>
+                    <button class="plot-wishlist" onclick="addToWishlist('Airport Zone Plot — Maharajpur', '₹68 Lakh')" aria-label="Add to wishlist">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+                    </button>
+                </div>
+                <div class="plot-body">
+                    <p class="plot-location">📍 Near Chambal Gate, Airforce Gate Main Road, Gwalior</p>
+                    <div class="plot-meta">
+                        <span>📐 20 × 50 = 1000 sqft</span>
+                        <span>🏷 RERA Approved</span>
+                        <span>🏘 5 Plots Available</span>
+                    </div>
+                    <a href="https://wa.me/917974741166?text=Hi%2C%20I%27m%20interested%20in%20Airport%20Zone%20Plot%20Maharajpur" class="plot-btn" target="_blank" rel="noopener">Enquire Now →</a>
+                </div>
+            </article>
+
+        </div>
+    </div>
+</section>
+
+<!-- ===== 5. GALLERY SLIDER ===== -->
+<section class="gallery" id="gallery" aria-label="Visual Experience Gallery">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="tag">Visual Experience</span>
+            <h2>Our Projects</h2>
+            <p>Immerse yourself in high-resolution galleries of our finest properties.</p>
+        </div>
+    </div>
+    <div class="gallery-track-wrap">
+        <div class="gallery-track" id="galleryTrack">
+            <div class="gallery-slide" onclick="openLightbox(0)">
+                <div class="gs-img"><img src="assets/property1.jpg" alt="Luxury Villa in Gwalior City Centre" loading="lazy"><div class="gs-overlay"><span>View Gallery</span></div></div>
+                <div class="gs-info"><h3>Luxury Villa — City Centre</h3><span>6 Images</span></div>
+            </div>
+            <div class="gallery-slide" onclick="openLightbox(1)">
+                <div class="gs-img"><img src="assets/property2.jpg" alt="Premium Plot near Agra-Gwalior Expressway" loading="lazy"><div class="gs-overlay"><span>View Gallery</span></div></div>
+                <div class="gs-info"><h3>Premium Plot — Expressway</h3><span>5 Images</span></div>
+            </div>
+            <div class="gallery-slide" onclick="openLightbox(2)">
+                <div class="gs-img"><img src="assets/property3.jpg" alt="Modern Duplex in Morar Gwalior" loading="lazy"><div class="gs-overlay"><span>View Gallery</span></div></div>
+                <div class="gs-info"><h3>Modern Duplex — Morar</h3><span>4 Images</span></div>
+            </div>
+            <div class="gallery-slide" onclick="openLightbox(3)">
+                <div class="gs-img"><img src="assets/property4.jpg" alt="Residential Apartment Thatipur" loading="lazy"><div class="gs-overlay"><span>View Gallery</span></div></div>
+                <div class="gs-info"><h3>Residential Apartment — Thatipur</h3><span>5 Images</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="gallery-nav">
+        <button class="gnav-btn" id="gPrev" aria-label="Previous">‹</button>
+        <div class="gnav-dots" id="gDots"></div>
+        <button class="gnav-btn" id="gNext" aria-label="Next">›</button>
+    </div>
+</section>
+
+<!-- ===== LIGHTBOX ===== -->
+<div class="lightbox" id="lightbox" role="dialog" aria-label="Image gallery" aria-modal="true">
+    <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
+    <img id="lbImg" src="" alt="Property gallery image">
+    <div class="lb-nav">
+        <button id="lbPrev" aria-label="Previous image">‹</button>
+        <span><span id="lbCur">1</span> / <span id="lbTotal">1</span></span>
+        <button id="lbNext" aria-label="Next image">›</button>
+    </div>
+</div>
+
+<!-- ===== 6. CHANNEL PARTNERS ===== -->
+<section class="channel-partners" id="channel-partners" aria-label="Channel Partners">
+    <div class="cp-split">
+        <div class="cp-img-side">
+            <img src="assets/ourchannalpatners.png" alt="Channel Partners - Vinodha Estates" loading="lazy">
+        </div>
+        <div class="cp-content-side">
+            <span class="tag">Join Our Network</span>
+            <h2>Our Channel Partners</h2>
+            <p>We believe in growing together. Vinodha Estates partners with trusted real estate professionals, brokers, and agents across Gwalior to deliver the best opportunities to our clients.</p>
+            <ul class="cp-benefits">
+                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Attractive Commission Structure</li>
+                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Exclusive Property Listings Access</li>
+                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Marketing &amp; Legal Support</li>
+                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg> Dedicated Relationship Manager</li>
+            </ul>
+            <a href="#cp-form" class="btn btn-primary" onclick="document.getElementById('cp-form').scrollIntoView({behavior:'smooth'});return false;">Become a Channel Partner</a>
+        </div>
+    </div>
+
+    <div class="cp-form-section" id="cp-form">
+        <div class="container">
+            <div class="section-head reveal">
+                <span class="tag">Partner Enquiry</span>
+                <h2>Join as a Channel Partner</h2>
+                <p>Fill in your details and we'll get back to you within 24 hours.</p>
+            </div>
+            <div class="cp-form reveal">
+                <input type="text" id="cpName" placeholder="Your Full Name" required aria-label="Full name">
+                <input type="tel" id="cpPhone" placeholder="Your Phone Number" required aria-label="Phone number">
+                <input type="text" id="cpCity" placeholder="Your City / Area" aria-label="City or area">
+                <input type="text" id="cpExp" placeholder="Years of Experience in Real Estate" aria-label="Years of experience">
+                <textarea id="cpMsg" placeholder="Tell us about yourself..." rows="3" aria-label="About yourself"></textarea>
+                <button class="btn btn-primary btn-full" onclick="sendCpEnquiry()">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Send Enquiry via WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== 7. ABOUT ===== -->
+<section class="about" id="about" aria-label="About Vinodha Estates">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-visual reveal">
+                <div class="about-img-frame">
+                    <img src="assets/aboutvinodha.png" alt="Founder of Vinodha Estates" loading="lazy" width="500" height="600">
+                    <div class="about-img-overlay"><span>About Vinodha</span></div>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <span class="tag">Who We Are</span>
+                <h2>About Vinodha Estates</h2>
+                <p>Vinodha Estates is a premier real estate consultancy specializing in luxury and residential properties across Gwalior. We curate exceptional homes that blend innovative architecture with premium craftsmanship.</p>
+                <p>Our team of experts guides you through every step — from discovery to ownership — ensuring a seamless and elevated experience.</p>
+                <div class="about-features">
+                    <div class="about-feat">
+                        <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></div>
+                        <div><h4>Handpicked Properties</h4><p>Every listing is personally vetted for quality and value.</p></div>
+                    </div>
+                    <div class="about-feat">
+                        <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+                        <div><h4>Trusted Transactions</h4><p>Transparent process with legal &amp; financial guidance.</p></div>
+                    </div>
+                    <div class="about-feat">
+                        <div class="feat-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg></div>
+                        <div><h4>White-Glove Service</h4><p>Dedicated support from first visit to final handover.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== 8. TESTIMONIALS ===== -->
+<section class="testimonials" id="testimonials" aria-label="Client Testimonials">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="tag">Client Stories</span>
+            <h2>What Our Clients Say</h2>
+            <p>Real stories from real property owners who trusted Vinodha Estates.</p>
+        </div>
+
+        <div class="testi-slider reveal">
+            <div class="testi-track" id="testiTrack">
+
+                <!-- Card 1 -->
+                <div class="testi-card">
+                    <div class="testi-video-wrap">
+                        <video muted loop playsinline preload="metadata" poster="assets/image1.png" title="Client Testimonial - Rajesh Kumar">
+                            <source src="assets/vinodhaestate_sample.mp4" type="video/mp4">
+                        </video>
+                        <div class="testi-video-overlay"></div>
+                    </div>
+                    <div class="testi-body">
+                        <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote>"Vinodha Estates turned our dream into reality. Their expertise in luxury properties is truly unmatched."</blockquote>
+                        <div class="testi-author">
+                            <div class="testi-avatar">RK</div>
+                            <div><strong>Rajesh Kumar</strong><span>Property Owner, Chennai</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="testi-card">
+                    <div class="testi-video-wrap">
+                        <video muted loop playsinline preload="metadata" poster="assets/image2.jpeg" title="Client Testimonial - Priya Sharma">
+                            <source src="assets/vinodhaestate_sample.mp4" type="video/mp4">
+                        </video>
+                        <div class="testi-video-overlay"></div>
+                    </div>
+                    <div class="testi-body">
+                        <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote>"From plot selection to construction — Vinodha Estates handled everything seamlessly. Our dream home in Gwalior is now a reality!"</blockquote>
+                        <div class="testi-author">
+                            <div class="testi-avatar">PS</div>
+                            <div><strong>Priya Sharma</strong><span>Property Owner, Gwalior</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="testi-card">
+                    <div class="testi-video-wrap">
+                        <video muted loop playsinline preload="metadata" poster="assets/image4.png" title="Client Testimonial - Vikram Joshi">
+                            <source src="assets/vinodhaestate_sample.mp4" type="video/mp4">
+                        </video>
+                        <div class="testi-video-overlay"></div>
+                    </div>
+                    <div class="testi-body">
+                        <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote>"Their documentation and legal services saved us weeks of hassle. Extremely reliable and thorough with every detail."</blockquote>
+                        <div class="testi-author">
+                            <div class="testi-avatar">VJ</div>
+                            <div><strong>Vikram Joshi</strong><span>Business Owner, Gwalior</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="testi-card">
+                    <div class="testi-video-wrap">
+                        <video muted loop playsinline preload="metadata" poster="assets/image5.png" title="Client Testimonial - Aman Gupta">
+                            <source src="assets/vinodhaestate_sample.mp4" type="video/mp4">
+                        </video>
+                        <div class="testi-video-overlay"></div>
+                    </div>
+                    <div class="testi-body">
+                        <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote>"As a first-time buyer, I was nervous. Vinodha Estates guided me through every step — from planning to possession. Highly recommended!"</blockquote>
+                        <div class="testi-author">
+                            <div class="testi-avatar">NG</div>
+                            <div><strong>Aman Gupta</strong><span>First-time Buyer, Gwalior</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="testi-card">
+                    <div class="testi-video-wrap">
+                        <video muted loop playsinline preload="metadata" poster="assets/image6.png" title="Client Testimonial - Sarah Mitchell">
+                            <source src="assets/vinodhaestate_sample.mp4" type="video/mp4">
+                        </video>
+                        <div class="testi-video-overlay"></div>
+                    </div>
+                    <div class="testi-body">
+                        <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote>"Professional, transparent, and incredibly knowledgeable. They found us the perfect investment property at the best price."</blockquote>
+                        <div class="testi-author">
+                            <div class="testi-avatar">SM</div>
+                            <div><strong>Sarah Mitchell</strong><span>Investor, Mumbai</span></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="testi-card">
+                    <div class="testi-video-wrap">
+                        <video muted loop playsinline preload="metadata" poster="assets/review3.png" title="Client Testimonial - Anand Gill">
+                            <source src="assets/vinodhaestate_sample.mp4" type="video/mp4">
+                        </video>
+                        <div class="testi-video-overlay"></div>
+                    </div>
+                    <div class="testi-body">
+                        <div class="testi-stars" aria-label="5 out of 5 stars">★★★★★</div>
+                        <blockquote>"Invaluable market insights and white-glove service. The gold standard in premium real estate in Gwalior."</blockquote>
+                        <div class="testi-author">
+                            <div class="testi-avatar">AG</div>
+                            <div><strong>Anand Gill</strong><span>Portfolio Manager, Delhi</span></div>
+                        </div>
+                    </div>
+                </div>
+
+            </div><!-- end testi-track -->
+
+            <!-- Navigation -->
+            <div class="testi-nav">
+                <button class="testi-btn" id="testiPrev" aria-label="Previous reviews">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg>
+                </button>
+                <div class="testi-dots" id="testiDots"></div>
+                <button class="testi-btn" id="testiNext" aria-label="Next reviews">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+                </button>
+            </div>
+
+        </div><!-- end testi-slider -->
+    </div>
+</section>
+
+<!-- ===== 9. CTA BANNER ===== -->
+<section class="cta-banner" aria-label="Call to Action">
+    <div class="container">
+        <div class="cta-inner reveal">
+            <h2>Ready to Find Your Dream Property?</h2>
+            <p>Schedule a private tour and experience luxury living firsthand.</p>
+            <div class="cta-actions">
+                <a href="#contact" class="btn btn-primary">Schedule a Tour</a>
+                <a href="https://wa.me/917974741166?text=Hi%20Vinodha%20Estates%2C%20I%27m%20interested%20in%20your%20properties" class="btn btn-whatsapp" target="_blank" rel="noopener noreferrer">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== 10. CONTACT ===== -->
+<section class="contact" id="contact" aria-label="Contact Us">
+    <div class="container">
+        <div class="contact-grid">
+            <div class="contact-info reveal">
+                <span class="tag">Get in Touch</span>
+                <h2>Let's Start a Conversation</h2>
+                <p>Whether you're buying, selling, or investing — our team is ready to help.</p>
+                <div class="contact-details">
+                    <div class="cd-item">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        <div><strong>Phone</strong><a href="tel:+917974741166">+91 79747-41166</a></div>
+                    </div>
+                    <div class="cd-item">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        <div><strong>Email</strong><a href="mailto:vinodhaestates@gmail.com">vinodhaestates@gmail.com</a></div>
+                    </div>
+                    <div class="cd-item">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <div><strong>Office</strong><span>Shop No.4, Ground Floor, Royal Housing Development, Near District Court, Alkapuri, City Center, Gwalior</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-form-wrap reveal">
+                <form class="contact-form" id="contactForm" novalidate>
+                    <div class="form-row">
+                        <div class="form-group"><input type="text" name="name" placeholder="Your Name" required aria-label="Your name"></div>
+                        <div class="form-group"><input type="email" name="email" placeholder="Your Email" required aria-label="Your email"></div>
+                    </div>
+                    <div class="form-group"><input type="tel" name="phone" placeholder="Your Phone" required aria-label="Your phone"></div>
+                    <div class="form-group">
+                        <select name="interest" aria-label="Interest type">
+                            <option value="">I'm interested in...</option>
+                            <option value="buy">Buying a Property</option>
+                            <option value="sell">Selling a Property</option>
+                            <option value="invest">Investment Consultation</option>
+                            <option value="tour">Schedule a Tour</option>
+                        </select>
+                    </div>
+                    <div class="form-group"><textarea name="message" placeholder="Your Message" rows="4" aria-label="Your message"></textarea></div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ===== 11. BLOG ===== -->
+<section class="blog" id="blog" aria-label="Blog and Insights">
+    <div class="container">
+        <div class="section-head reveal">
+            <span class="tag">Knowledge Hub</span>
+            <h2>Blog &amp; Insights</h2>
+            <p>Stay informed with the latest real estate trends, investment tips, and Gwalior property market updates.</p>
+        </div>
+        <div class="blog-grid reveal">
+            <article class="blog-card">
+                <div class="blog-img"><img src="assets/blog1.png" alt="Why Gwalior is the next real estate hotspot" loading="lazy"></div>
+                <div class="blog-body">
+                    <span class="blog-tag">Investment</span>
+                    <h3>Why Gwalior is the Next Real Estate Hotspot in MP</h3>
+                    <p>Gwalior's Smart City development, growing infrastructure, and affordable prices make it a prime investment destination.</p>
+                    <span class="blog-date">Coming Soon</span>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-img"><img src="assets/blog2.png" alt="Guide to property registration in Madhya Pradesh" loading="lazy"></div>
+                <div class="blog-body">
+                    <span class="blog-tag">Legal Guide</span>
+                    <h3>Complete Guide to Property Registration in MP</h3>
+                    <p>Everything you need to know about e-registration, stamp duty, documentation, and the legal process in Madhya Pradesh.</p>
+                    <span class="blog-date">Coming Soon</span>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-img"><img src="assets/blog3.png" alt="First time home buyer tips Gwalior" loading="lazy"></div>
+                <div class="blog-body">
+                    <span class="blog-tag">Tips</span>
+                    <h3>First-Time Buyer? 10 Things to Check Before Buying</h3>
+                    <p>From RERA verification to location analysis — the essential checklist for every first-time buyer in Gwalior.</p>
+                    <span class="blog-date">Coming Soon</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- ===== 12. STATS ===== -->
+<section class="stats" id="stats" aria-label="Our Achievements">
+    <div class="container">
+        <div class="stats-inner reveal">
+            <div class="stat-item">
+                <strong class="counter" data-target="500" data-suffix="+">0</strong>
+                <span>Families Served</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <strong class="counter" data-target="120" data-suffix="+">0</strong>
+                <span>Successful Deals</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <strong class="counter" data-target="50" data-suffix="+ Cr">0</strong>
+                <span>Property Value Sold</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <strong>🧭</strong>
+                <span>East, West, North &amp; South of Gwalior</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/Angular blue logo design.png" alt="Vinodha Estates" width="40" height="40" loading="lazy">
+                    <span class="logo-wrap">
+                        <span class="logo-brand footer-logo-brand">VINODHA</span>
+                        <span class="logo-sub footer-logo-sub">ESTATES</span>
+                    </span>
+                </a>
+                <p>Contact: 7974741166</p>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/vinodha_estates" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="https://www.facebook.com/people/Vinodha-properties-HUB/61583820551172/" class="social-icon" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="https://wa.me/917974741166" class="social-icon" aria-label="WhatsApp" target="_blank" rel="noopener noreferrer">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Our Projects</h4>
+                <ul>
+                    <li><a href="#projects">All Projects</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#services">Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#testimonials">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">RERA Compliance</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Vinodha Estates. All rights reserved.</p>
+            <p class="made-by">Made with ♥ by <a href="https://anvexatechnology.com" target="_blank" rel="noopener noreferrer">Anvexa Technology</a></p>
+        </div>
+    </div>
+</footer>
+
+<!-- ===== WHATSAPP FLOAT ===== -->
+<a href="https://wa.me/917974741166?text=Hi%20Vinodha%20Estates%2C%20I%27m%20interested%20in%20your%20properties" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ===== WISHLIST MODAL ===== -->
+<div class="wishlist-modal" id="wishlistModal" role="dialog" aria-modal="true" aria-label="My Wishlist">
+    <div class="wm-content">
+        <div class="wm-head">
+            <h3>My Wishlist</h3>
+            <button class="wm-close" id="wmClose" aria-label="Close wishlist">&times;</button>
+        </div>
+        <div class="wm-body" id="wishlistItems"></div>
+        <div class="wm-footer">
+            <button class="btn btn-primary btn-full" id="emailWishlistBtn">Email Wishlist to Agent</button>
+        </div>
+    </div>
+</div>
+
+<!-- ===== TOAST ===== -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<noscript>
+    <div style="padding:2rem;max-width:1200px;margin:0 auto;font-family:sans-serif;">
+        <h2>Vinodha Estates — Premium Real Estate in Gwalior</h2>
+        <p>Phone: <a href="tel:+917974741166">+91 79747 41166</a> | Email: <a href="mailto:hello@vinodhaestates.com">hello@vinodhaestates.com</a></p>
+    </div>
+</noscript>
+
+<script src="script.js"></script>
+</body>
+</html>
